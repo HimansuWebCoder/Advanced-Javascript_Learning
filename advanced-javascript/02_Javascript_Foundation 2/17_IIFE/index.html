@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title></title>
+	</head>
+	<body>
+		<p>checkout in console z this is overwritten the top z</p>
+		<h1>HELLOOOOOOO</h1>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script>
+			var z = 1;
+			// function a() {
+			// 	return 5;
+			// }
+
+			// var script1 = (function() {
+			// 	return 5;
+			// })()
+
+			// or
+
+			// var script1 = (function () {
+			// 	function a() {
+			// 		return 5;
+			// 	}
+			// 	return {
+			// 		a: a,
+			// 	};
+			// })();
+
+			// use jquery
+			// var script1 = (function () {
+			// 	$('h1').click(function() {
+			// 		$('h1').hide();
+			// 	})
+			// 	return {
+				
+			// 	};
+			// })();
+
+             // or
+			// var script1 = (function (OMG) {
+			// 	OMG('h1').click(function() {
+			// 		OMG('h1').hide();
+			// 	})
+			// 	return {
+				
+			// 	};
+			// })(jQuery);
+
+				var script1 = (function ($) {
+				$('h1').click(function() {
+					$('h1').hide();
+				})
+				return {
+				
+				};
+			})(jQuery);
+
+			// window.$
+            // window.jQuery
+			// run this script1.a in console
+			// script1.a // 5
+		</script>
+		<script>
+			var zz = 2;
+		</script>
+		<script>
+			var zzz = 3;
+		</script>
+		<script>
+			var z = 10000;
+			function a() {
+				return "hahhaha";
+			}
+
+			// this will pollute override
+		</script>
+	</body>
+</html>
