@@ -49,3 +49,6 @@ const dragon = {};
 // dragon.__proto__ // {__defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, __lookupSetter__: ƒ, …}
 dragon.isPrototypeOf(lizard); // true
 lizard.isPrototypeOf(dragon); // false
+
+// lizard is inheritance of dragon
+// dragon is not a prototype of lizard
