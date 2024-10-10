@@ -40,7 +40,3 @@ callMeMaybe(); // Hi! I am new here!
 // function that is using it, it's going to create a closure.
 // How cool is that ?
 // Let's take a break and do some more exercises.
-
-A1s2h3i454s5@58
-545737750010
-388059524324
