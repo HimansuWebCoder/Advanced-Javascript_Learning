@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title></title>
+	</head>
+	<body>
+		<h1>HELLOOOOOOOO</h1>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="module" src="./script.js"></script>
+		<script>
+			var globalSecret = "1234";
+			var fight = "haha";
+		</script>
+		<script>
+			var script2 = (function ($, globalSecret) {
+				$("h1").click(function () {
+					$("h1").hide();
+				});
+				globalSecret = "0";
+			})(jQuery, globalSecret);
+		</script>
+		<script type="module">
+			// import { fight } from "./script.js"; // named import
+			// import { fight, jump } from "script"; // named import
+
+			// import fight from "./script.js"; //  default import no need of bracket
+			// console.log(fight("himansu", "rinky"));
+
+			import fight, { jump } from "./script.js";
+			console.log(fight('himansu', "rinky"))
+			console.log(jump())
+		</script>
+	</body>
+</html>

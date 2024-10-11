@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title></title>
+	</head>
+	<body>
+		<h1>HELLOOOOOOOO</h1>
+		<script src="./script.js"></script>
+		<script>
+			// comment out see fight show or not
+			var globalSecret = "1234";
+			var fight = "haha";
+			var fightModule = "hahha"; // pollute this overwritten
+		</script>
+		<script>
+			var script2 = (function ($, globalSecret) {
+				$("h1").click(function () {
+					$("h1").hide();
+				});
+				globalSecret = "0";
+			})(jQuery, globalSecret);
+		</script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<!-- // jquery is placed after the above code so  -->
+		<!-- index.html:23 Uncaught ReferenceError: jQuery is not defined -->
+
+		<!-- // so script tag should be right order -->
+	</body>
+</html>

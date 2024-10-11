@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title></title>
+	</head>
+	<body>
+		<h1>HELLOOOOOOOO</h1>
+		<!-- jquery global import -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<!--  jQuery type in console and see access to jQuery-->
+		<script src="./script.js"></script>
+		<script>
+			// comment out see fight show or not
+			var globalSecret = "1234";
+			var fight = "haha";
+		</script>
+		<script>
+			// var script2 = (function(){
+			// 	$('h1').click(function(){
+			// 		$('h1').hide();
+			// 	})
+			// 	globalSecret = '0'
+			// })()
+
+			// see type globalSecret in console and result is 0 thats not good other variable
+			// to solve this do
+			// gs --> global secret
+			// var script2 = (function(gs){
+			// 	$('h1').click(function(){
+			// 		$('h1').hide();
+			// 	})
+			// 	gs = '0'
+			// })(globalSecret)
+
+			// globalSecret ---> '1234' remain same not change
+			// gs not defined because not access this inside of module
+
+			// but
+			// var script2 = (function(globalSecret){
+			// 	$('h1').click(function(){
+			// 		$('h1').hide();
+			// 	})
+			// 	globalSecret = '0'
+			// })(globalSecret)
+
+			// now remain same globalSecret = '1234'
+
+			var script2 = (function ($, globalSecret) {
+				$("h1").click(function () {
+					$("h1").hide();
+				});
+				globalSecret = "0";
+			})(jQuery, globalSecret);
+
+			// run in console
+			// jQuery
+			// $
+		</script>
+		<!-- <script src="./script2.js"></script> -->
+		<!-- <script src="./script3.js"></script> -->
+		<!-- exchange position so see fight what see console after before script by changing -->
+	</body>
+</html>
