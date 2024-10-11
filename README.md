@@ -1,4 +1,4 @@
-** Some of these topics covered in this are: **
+**Some of these topics covered in this are:**
 
 Javascript Engine
 
