@@ -20,7 +20,6 @@ elf.attack();
 elf2.attack();
 
 // Factory Functions
-
 function createElf(name, weapon) {
 	return {
 		name: name,

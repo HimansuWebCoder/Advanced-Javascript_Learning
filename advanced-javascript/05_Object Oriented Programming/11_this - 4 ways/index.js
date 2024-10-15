@@ -5,7 +5,7 @@ function Person(name, age) {
 }
 
 const person1 = new Person("Himansu", 22);
-person1; // person1 would be this
+person1; // person1 would be this, person1 === this keyword
 console.log(person1);
 
 // implicit binding - the most common one
